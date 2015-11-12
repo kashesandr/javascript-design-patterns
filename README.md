@@ -9,3 +9,4 @@ This is just for training purposes.
 - Strategy
 - Decorator
 - Mediator
+- Facade
