@@ -8,3 +8,4 @@ This is just for training purposes.
 - Composite
 - Strategy
 - Decorator
+- Mediator
