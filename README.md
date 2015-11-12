@@ -6,3 +6,4 @@ This is just for training purposes.
 
 ## Patterns
 - Composite
+- Strategy
