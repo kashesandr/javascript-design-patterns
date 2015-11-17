@@ -10,3 +10,6 @@ This is just for training purposes.
 - Decorator
 - Mediator
 - Facade
+- Abstract Factory
+- Builder
+- Factory Method
