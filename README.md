@@ -13,3 +13,4 @@ This is just for training purposes.
 - Abstract Factory
 - Builder
 - Factory Method
+- Prototype
