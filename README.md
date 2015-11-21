@@ -14,3 +14,7 @@ This is just for training purposes.
 - Builder
 - Factory Method
 - Prototype
+- Adapter
+- Singletone
+- Bridge
+- Flyweight
