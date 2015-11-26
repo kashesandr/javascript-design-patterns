@@ -18,3 +18,6 @@ This is just for training purposes.
 - Singletone
 - Bridge
 - Flyweight
+- Proxy
+- Chain of responsibilities
+- Command
