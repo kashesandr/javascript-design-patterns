@@ -5,19 +5,22 @@ Think it is a private repo.
 This is just for training purposes.
 
 ## Patterns
-- Composite
-- Strategy
-- Decorator
-- Mediator
-- Facade
-- Abstract Factory
-- Builder
-- Factory Method
-- Prototype
-- Adapter
-- Singletone
-- Bridge
-- Flyweight
-- Proxy
-- Chain of responsibilities
-- Command
+1 Composite
+2 Strategy
+3 Decorator
+4 Mediator
+5 Facade
+6 Abstract Factory
+7 Builder
+8 Factory Method
+9 Prototype
+10 Adapter
+11 Singletone
+12 Bridge
+13 Flyweight
+14 Proxy
+15 Chain of responsibilities
+16 Command
+17 Interpreter
+18 Iterator
+19 Memento
