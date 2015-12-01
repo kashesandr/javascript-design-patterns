@@ -24,3 +24,7 @@ This is just for training purposes.
 17 Interpreter
 18 Iterator
 19 Memento
+20 Observer
+21 State
+22 Template Method
+23 Visitor
