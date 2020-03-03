@@ -28,3 +28,4 @@ This is just for training purposes.
 21 State
 22 Template Method
 23 Visitor
+24 PubSub
