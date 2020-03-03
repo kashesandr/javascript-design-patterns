@@ -1,5 +1,4 @@
 // input devices
-
 var Gestures = function (output) {
     this.output = output;
 
@@ -8,7 +7,6 @@ var Gestures = function (output) {
     this.pan = function () { this.output.drag(); };
     this.pinch = function () { this.output.zoom(); };
 };
-
 var Mouse = function (output) {
     this.output = output;
 
@@ -19,49 +17,30 @@ var Mouse = function (output) {
 };
 
 // output devices
-
 var Screen = function () {
-    this.click = function () { log.add("Screen select"); };
-    this.move = function () { log.add("Screen move"); };
-    this.drag = function () { log.add("Screen drag"); };
-    this.zoom = function () { log.add("Screen zoom in"); };
+    this.click  = function () { console.log("Screen click"); };
+    this.move   = function () { console.log("Screen move"); };
+    this.drag   = function () { console.log("Screen drag"); };
+    this.zoom   = function () { console.log("Screen zoom"); };
 };
-
 var Audio = function () {
-    this.click = function () { log.add("Sound oink"); };
-    this.move = function () { log.add("Sound waves"); };
-    this.drag = function () { log.add("Sound screetch"); };
-    this.zoom = function () { log.add("Sound volume up"); };
+    this.click  = function () { console.log("Sound oink"); };
+    this.move   = function () { console.log("Sound waves"); };
+    this.drag   = function () { console.log("Sound screetch"); };
+    this.zoom   = function () { console.log("Sound volume up"); };
 };
 
-// logging helper
+var gestures = new Gestures(new Screen());
+var mouse = new Mouse(new Audio());
 
-var log = (function () {
-    var log = "";
+gestures.tap();
+gestures.swipe();
+gestures.pinch();
+gestures.pan();
 
-    return {
-        add: function (msg) { log += msg + "\n"; },
-        show: function () { console.log(log); log = ""; }
-    }
-})();
+console.log('--- --- ---');
 
-function run() {
-
-    var screen = new Screen();
-    var audio = new Audio();
-
-    var hand = new Gestures(screen);
-    var mouse = new Mouse(audio);
-
-    hand.tap();
-    hand.swipe();
-    hand.pinch();
-
-    mouse.click();
-    mouse.move();
-    mouse.wheel();
-
-    log.show();
-}
-
-run();
+mouse.click();
+mouse.move();
+mouse.wheel();
+mouse.down();
