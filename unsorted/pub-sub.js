@@ -1,3 +1,52 @@
+// class PubSub {
+//
+//     private idCounter = 0;
+//     private ps: TopicSubscriptions = {};
+//
+//     constructor() {}
+//
+//     public subscribe(topic: string, cb: Function): number {
+//         if (!(topic in this.ps)) {
+//             this.ps[topic] = [];
+//         }
+//         this.ps[topic].push({
+//             id: ++this.idCounter,
+//             callback: cb
+//         });
+//         return this.idCounter;
+//     }
+//
+//     public unsubscribe(topic: string, id: number): void {
+//         const subscribers: Subscription[] = [];
+//         for (const subscriber of this.ps[topic]) {
+//             if (subscriber.id !== id) {
+//                 subscribers.push(subscriber);
+//             }
+//         }
+//         this.ps[topic] = subscribers;
+//     }
+//
+//     public publish<T>(topic: string, data: T): void {
+//         for (const subscriber of this.ps[topic]) {
+//             subscriber.callback(data);
+//         }
+//     }
+//
+// }
+//
+// const pubSubSingleton = new PubSub();
+//
+// export { pubSubSingleton, PubSub };
+//
+// interface Subscription {
+//     id: number;
+//     callback: Function;
+// }
+//
+// interface TopicSubscriptions {
+//     [topic: string]: Subscription[];
+// }
+
 var PubSub = function() {
     this.idCounter = 0;
     this.ps = {};
